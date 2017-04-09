@@ -1,0 +1,347 @@
+ul {
+	margin: 0;
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+}
+.row {
+	margin-right: 0;
+	margin-left: 0; 
+}
+.page-container {
+	max-width: 1170px;
+	margin: auto;
+}
+.header {
+	background-color: #2c4391;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding: 10px;
+}
+.header a {
+	color: #ffffff;
+}
+.header a.active {
+	color: #fbb329;
+}
+.header .text-left ul li {
+	margin-right: 35px;
+}
+.header ul li img {
+	margin-right: 12px;
+}
+.navbar {
+	background-color: 1c3172;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0px;
+	box-shadow: 0px 8px 8px 0px rgba(84,84,84,0.45);
+}
+.navbar .navbar-header img {
+	width: 180px;
+	padding: 15px 0;
+}
+.navbar .nav img {
+	position: relative;
+	left: 3px;
+}
+.navbar ul a {
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding-top: 23px;
+	padding-bottom: 25px;
+}
+button.navbar-toggle {
+	border-color: #fbb329;
+	margin-top: 35px;
+}
+.navbar-toggle .icon-bar {
+	background-color: #fbb329;
+}
+.cookie {
+	background-color: #fbb329; 
+	color: #1c3172;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+}
+.cookie ul a {
+	text-decoration: underline;
+	color: #1c3172;
+}
+.cookie ul li {
+	font-family: Arial;
+	font-size: 14px;
+}
+.cookie button {
+	background-color: #1c3172;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px; 
+}
+.page-content {
+	max-width: 1170px;
+	margin: auto;
+}
+.page-content .screen{
+	position: relative;
+}
+.page-content .screen .slide {
+	height: 484px;
+	width: 100%;
+	object-fit: cover;
+}
+.page-content .screen .over {
+	position: absolute;
+	top: 95px;
+	right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: rgba(3, 17, 60, 0.7);
+}
+.page-content .screen .over li {
+	display: block;
+	font-size: 19px;
+	font-family: 'Raleway', sans-serif;
+	color: #fbb329;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 23px;
+}
+.page-content .screen .over li span {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+}	
+.page-content .screen .badge-slide {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+}
+.news.row {
+	background-color: #fbb329;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.news .text-right {
+	margin-top: 15px;
+}
+.news span {
+	color: #03113c;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17.5px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.news form {
+	display: inline-block;
+}
+.news input{
+	width: 300px;
+	border-radius: 5px;
+	line-height: 30px;
+}
+.news button {
+	background-color: #03113c;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	line-height: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.mini-slide {
+	padding: 30px 0 40px 0;
+}
+.mini-slide .slide-section {
+	padding: 0;
+}
+.mini-slide .slide-section img {
+	height: 100px;
+}
+.mini-slide .slide-item {
+	padding: 0;
+}
+.mini-slide .title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	color: #fbb329;
+	text-transform: uppercase;
+}
+.mini-slide .text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	color: #03113c;
+	line-height: 12px;
+}
+.taburi {
+	padding: 30px 0 40px 0;
+}
+.taburi .icon {
+	background-color: #03113c;
+	border-radius: 5px; 
+	height: 165px;
+	padding-top: 35px;
+}
+.taburi .title-icon {
+	color: #2c4391;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.taburi .title-icon a.active {
+	color: #fbb329;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	margin: auto;
+}
+.carousel .item .row {
+	position: absolute;
+	bottom: 22px;
+	right: 0;
+}
+.carousel-control.left, .carousel-control.right {
+	top: 40%;
+	background-image:none;
+	opacity: 1; 
+}
+
+.carousel-control.left {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.carousel-control.right {
+	text-align: right;
+	padding-right: 15px
+}
+.carousel-inner>.item>img {
+	min-height: 290px;
+	height: auto;
+}
+
+.item p {
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+}
+.slider-text {
+	color: #ffffff;
+}
+.slider-title {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+}
+.slider-paragraph {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	line-height: 16px;
+	font-weight: 500;
+	padding-top: 45px;
+}
+.slider-paragraph span {
+	color: #fbb329;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+.clienti-title {
+	text-transform: uppercase;
+	color: #03113c;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	margin-top: 40px;
+}
+.clienti {
+	padding: 30px 0 40px 0;
+	vertical-align: middle;
+}
+footer {
+	background-color: #03113c;
+	padding-bottom: 20px;
+}
+.footer .logo img {
+	width: 180px;
+	padding-top: 15px;
+}
+.footer .footer-list {
+	text-align: center;
+	margin-top: 30px;
+}
+.footer .footer-list li {
+	color: #ffffff;
+	margin: 0 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+.footer .footer-list li img {
+	width: 60px;
+	height: 30px;
+}
+.footer .footer-list li img.webmagnat-logo {
+	position: absolute;
+	height: 60px;
+	width: 90px;
+	top: 20px;
+}
+.footer .footer-items, .footer .footer-items a {
+	color: #2c4391;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+}
+.footer .footer-items a {
+	margin-right: 25px;
+}
+
+.footer-menu {
+	margin-bottom: 15px;
+}
+
+.carousel-caption {
+	padding: 0;
+	top: 41px;
+}
+.carousel-caption img {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+		right: 8%;
+		left: 8%;
+		padding-bottom: 30px;
+	}
+}
+@media (max-width: 991px) {
+	.news div {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	#myCarousel {
+		min-height: 290px;
+	}
+	.carousel-inner>.item>img {
+		height: 100%;
+	}
+}
