@@ -1,7 +1,9 @@
 <!DOCTYPE html> 
 <html>
 <head>
-	<meta>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="styles.css">
 	
@@ -12,114 +14,73 @@
 		<!-- left section -->
 		<div class="residents">
 			<!-- List with all residents -->
-			<div class="residents-list">
+			<div class="residents-list-container">
 				<div class="residents-title">
 					<h1>Locatari</h1>
 				</div>
-				<div class="residents-name">
-					<ol id="resident">
-						<li>Mara - 28 ani</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ol>
-				</div>
+				<ol class="resident-list"></ol>
 			</div>
 			<!-- Formular for registration -->
-			<div class="residents-registration">
-				<form id="registration-form">
-					<div class="registration">
-						Numele dvs: <input type="text" id="name" value><br>
-						Varsta dvs: <input type="text" id="age" value><br>
-					</div>
-				</form>
-				<button id="register">Register</button>
-			</div>
-			
+			<form class="registration-form">
+				<div class="registration">
+					Numele dvs: <input type="text" class="person-name" required><br>
+					Varsta dvs: <input type="number" class="person-age" min="0" required><br>
+				</div>
+				<input type="submit" class="button" value="Registration ">
+			</form>
 		</div>
 
 		<!-- center section -->
-		<div class="apartaments">
+		<div class="apartments">
 			<!-- Create or delete the floor -->
-			<div class="apartaments-building">
-				<div class="apartaments-buttons">
-					<div class="apartament-create">
+			<div class="apartments-building">
+				<div class="apartments-buttons">
+					<div class="apartment-create">
 						<div class="create">
-							<button id="create">Create New Floor</button>
+							<button class="create button">Create New Floor</button>
 						</div>
 					</div>
 					<div class="delete">
-						<div class="apartament-delete">
-							<button id="delete">Delete A Floor</button>
+						<div class="apartment-delete">
+							<button class="delete button">Delete A Floor</button>
 						</div>
 					</div>
 				</div>	
 			</div>
 			<!-- Visual building -->
-			<div class="apartaments-visual">
-				<div class="apartament-floor">
+			<div class="apartments-visual">
+				<div class="apartment-floor">
 					<div class="floor">
-						<div class="apartament"></div>
-						<div class="apartament"></div>
-					</div>
-					<div class="floor">
-						<div class="apartament"></div>
-						<div class="apartament"></div>
-					</div>
-					<div class="floor">
-						<div class="apartament"></div>
-						<div class="apartament"></div>
-					</div>
-					<div class="floor">
-						<div class="apartament"></div>
-						<div class="apartament"></div>
-					</div>
-					<div class="floor">
-						<div class="apartament"></div>
-						<div class="apartament"></div>
+						<div class="apartment"></div>
+						<div class="apartment"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	</div>
 
-	<!-- right section -->
-	<div class="movement">
-		<form id="movement-form">
-			<div class="movement-residents">
-				<div class="person">
-					<select>
-						<option value="">Nume locatar</option>
-						<option value="">Mara</option>
-						<option value="">Ana</option>
-						<option value="">Ion</option>
-						<option value="">Petru</option>
-					</select>
+		<!-- right section -->
+		<div class="movement">
+			<form id="movement-form">
+				<div class="movement-residents">
+					<div class="person">
+						<select>
+							<option value="">Nume locatar</option>
+						</select>
+					</div>
+					<div class="free-apartments">
+						<select>
+							<option value="">Apartamente libere</option>
+						</select>
+					</div>
 				</div>
-				<div class="free-apartaments">
-					<select>
-						<option value="">Apartamente libere</option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-						<option value=""></option>
-					</select>
-				</div>
+			</form>
+			<div class="move">
+				<button form="movement-form" class="button">Reside</button>
 			</div>
-		</form>
-		<div class="move">
-			<button form="movement-form">Reside</button>
 		</div>
-	</div>
-</main>
+	</main>
 
-<script src="scripts.js"></script>
+	<script src="scripts.js"></script>
 </body>
 </html>
