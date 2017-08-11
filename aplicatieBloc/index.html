@@ -26,7 +26,7 @@
 					Numele dvs: <input type="text" class="person-name" required><br>
 					Varsta dvs: <input type="number" class="person-age" min="0" required><br>
 				</div>
-				<input type="submit" class="button" value="Registration ">
+				<input type="submit" class="button" value="Inregitreaza-te">
 			</form>
 		</div>
 
@@ -37,12 +37,12 @@
 				<div class="apartments-buttons">
 					<div class="apartment-create">
 						<div class="create">
-							<button class="create button">Create New Floor</button>
+							<button class="create button">Creaza un nou etaj</button>
 						</div>
 					</div>
 					<div class="delete">
 						<div class="apartment-delete">
-							<button class="delete button">Delete A Floor</button>
+							<button class="delete button">Sterge un etaj</button>
 						</div>
 					</div>
 				</div>	
@@ -50,10 +50,6 @@
 			<!-- Visual building -->
 			<div class="apartments-visual">
 				<div class="apartment-floor">
-					<div class="floor">
-						<div class="apartment"></div>
-						<div class="apartment"></div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -61,23 +57,24 @@
 
 		<!-- right section -->
 		<div class="movement">
-			<form id="movement-form">
+			<form class="movement-form">
 				<div class="movement-residents">
 					<div class="person">
-						<select>
-							<option value="">Nume locatar</option>
+						<select class="person-list">
+							<option>Nume locatar fara apartament</option>
 						</select>
 					</div>
 					<div class="free-apartments">
-						<select>
-							<option value="">Apartamente libere</option>
+						<select class="apartments-list">
+							<option>Apartamente ramase disponibile</option>
 						</select>
 					</div>
 				</div>
+				<div class="move">
+					<input type="submit" class="button" value="Muta in apartament">
+				</div>
 			</form>
-			<div class="move">
-				<button form="movement-form" class="button">Reside</button>
-			</div>
+			
 		</div>
 	</main>
 
