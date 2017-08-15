@@ -33,16 +33,20 @@ const apartment = {
 			divApartment.classList.add("apartment");
 			divApartment.innerText = "Apartament " + apartment.indexAp++;
 			this.onFloorCreated(divApartment);
-
 		} else {
 			alert("Nu mai sunt locuri disponibile pentru a crea apartamente !");
 		}
 	},
 	deleteApartment() {
-		const apartmentFloor = document.querySelector(".apartment-floor");
-		apartmentFloor.removeChild(apartmentFloor.lastChild);
-		apartment.indexAp = apartment.indexAp - 2;
-		this.onFloorDeleted(apartmentFloor);
+		if(document.querySelectorAll(".floor").length > 0) {
+			const apartmentFloor = document.querySelector(".apartment-floor");
+			apartmentFloor.removeChild(apartmentFloor.lastChild);
+			apartment.indexAp = apartment.indexAp - 2;
+			this.onFloorDeleted(apartmentFloor);
+		} else {
+			alert("Nu mai sunt etaje disponibile pentru a fi demolate !");
+		}
+		
 	},
 	occupyApartament(personSelected, apartmentSelected){
 		const apartmentArray = document.querySelectorAll(".apartment");
