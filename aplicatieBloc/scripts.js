@@ -49,7 +49,7 @@ const apartment = {
 		for( let i = 0; i < apartmentArray.length; i++) {
 			if(apartmentArray[i].innerText === apartmentSelected) {
 				apartmentArray[i].innerText = personSelected;
-				apartmentArray[i].style.backgroundColor = "yellow";
+				apartmentArray[i].style.backgroundColor = "white";
 				apartmentArray[i].style.color = "black";
 				administration.removePerson(personSelected);
 				administration.removeApartment(apartmentSelected);
