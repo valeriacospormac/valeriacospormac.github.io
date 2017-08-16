@@ -23,8 +23,10 @@
 			<!-- Formular for registration -->
 			<form class="registration-form">
 				<div class="registration">
-					Numele dvs: <input type="text" class="person-name" required><br>
-					Varsta dvs: <input type="number" class="person-age" min="0" required><br>
+					<label for="name">Numele dvs:</label>
+					<input id="name" class="person-name" required><br>
+					<label for="age">Varsta dvs:</label>
+					<input type="number" id="age" class="person-age" min="0" required><br>
 				</div>
 				<input type="submit" class="button" value="Inregistreaza-te">
 			</form>
@@ -60,12 +62,12 @@
 			<form class="movement-form">
 				<div class="movement-residents">
 					<div class="person">
-						<select class="person-list">
+						<select title="name" class="person-list">
 							<option>Nume locatar fara apartament</option>
 						</select>
 					</div>
 					<div class="free-apartments">
-						<select class="apartments-list">
+						<select title="apartment" class="apartments-list">
 							<option>Apartamente ramase disponibile</option>
 						</select>
 					</div>
@@ -74,10 +76,13 @@
 					<input type="submit" class="button" value="Muta in apartament">
 				</div>
 			</form>
-			
 		</div>
 	</main>
 
-	<script src="scripts.js"></script>
+	<script src="./scripts/PersonScripts.js"></script>
+	<!--<script src="./scripts/ApartmentsScripts.js"></script>-->
+	<!--<script src="./scripts/AdministrationScripts.js"></script>-->
+	<!--<script src="./scripts/IntegrationScripts.js"></script>-->
 </body>
 </html>
+
