@@ -1,13 +1,15 @@
 const administrationFactory = function () {
+
+    const homelessPersons = [];
     const administration = {
         addHomelessPerson(person) {
             const optionPers = document.createElement("option");
             optionPers.innerText = person.name;
             document.querySelector(".person-list").appendChild(optionPers);
         },
-        addApartment(apartment) {
+        addApartment(apartament) {
             const optionAp = document.createElement("option");
-            optionAp.innerText = apartment.innerText;
+            optionAp.innerText = apartament.innerText;
             document.querySelector(".apartments-list").appendChild(optionAp);
         },
         deleteApartment() {
@@ -23,14 +25,17 @@ const administrationFactory = function () {
             const apSelected = document.querySelector(".apartments-list").options[document.querySelector(".apartments-list").selectedIndex];
             document.querySelector(".apartments-list").removeChild(apSelected);
         },
-        onSelection() {
+       /* onSelection() {
             const personSelected = document.querySelector(".person-list").options[document.querySelector(".person-list").selectedIndex].text;
             const apartmentSelected = document.querySelector(".apartments-list").options[document.querySelector(".apartments-list").selectedIndex].innerText;
             apartment.occupyApartament(personSelected, apartmentSelected);
+        },*/
+        onSelection(){
         },
-        homelessPerson: [],
+
+
         addHomelessPerson(homelessPerson) {
-            this.homelessPerson.push(homelessPerson);
+            homelessPersons.push(homelessPerson);
             const optionPers = document.createElement("option");
             optionPers.innerText = homelessPerson.name;
             document.querySelector(".person-list").appendChild(optionPers);

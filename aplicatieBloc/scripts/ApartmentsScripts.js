@@ -11,13 +11,13 @@ const apartmentFactory = function () {
                 let divApartment = document.createElement("div");
                 divFloor.appendChild(divApartment);
                 divApartment.classList.add("apartment");
-                divApartment.innerText = "Apartament " + apartment.indexAp++;
+                divApartment.innerText = `Apartament ${apartment.indexAp++}`;
                 this.onFloorCreated(divApartment);
 
                 divApartment = document.createElement("div");
                 divFloor.appendChild(divApartment);
                 divApartment.classList.add("apartment");
-                divApartment.innerText = "Apartament " + apartment.indexAp++;
+                divApartment.innerText = `Apartament ${apartment.indexAp++}`;
                 this.onFloorCreated(divApartment);
             } else {
                 alert("Nu mai sunt locuri disponibile pentru a crea apartamente !");
@@ -40,15 +40,17 @@ const apartmentFactory = function () {
                     apartmentArray[i].innerText = personSelected;
                     apartmentArray[i].style.backgroundColor = "white";
                     apartmentArray[i].style.color = "black";
-                    administration.removePerson(personSelected);
-                    administration.removeApartment(apartmentSelected);
+                    /*administration.removePerson(personSelected);
+                    administration.removeApartment(apartmentSelected);*/
+                    this.onOccupyApartment();
                 }
             }
-
         },
         onFloorCreated() {
         },
         onFloorDeleted() {
+        },
+        onOccupyApartment() {
         }
     };
 

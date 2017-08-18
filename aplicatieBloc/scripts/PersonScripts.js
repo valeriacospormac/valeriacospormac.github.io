@@ -1,4 +1,5 @@
 const personCreatorFactory = function () {
+
     const personFactory = (name, age) => ({
         name: name,
         age: age
@@ -12,7 +13,7 @@ const personCreatorFactory = function () {
             persons.push(person);
 
             const li = document.createElement("li");
-            li.innerText = person.name + " cu varsta de " + person.age + " ani";
+            li.innerText =  `${person.name} cu varsta de ${person.age} ani`;
 
             const ol = document.querySelector(".residents .resident-list");
             ol.appendChild(li);
@@ -29,8 +30,6 @@ const personCreatorFactory = function () {
         const name = document.querySelector(".person-name").value;
         const age = document.querySelector(".person-age").value;
         personCreator.pushPerson(name, age);
-
-
 
         event.target.reset();
     });

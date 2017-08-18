@@ -1,88 +1,90 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="styles.css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aplicatie pentru locatari</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-	<main class="container">
+<main class="container">
 
-		<!-- left section -->
-		<div class="residents">
-			<!-- List with all residents -->
-			<div class="residents-list-container">
-				<div class="residents-title">
-					<h1>Locatari</h1>
-				</div>
-				<ol class="resident-list"></ol>
-			</div>
-			<!-- Formular for registration -->
-			<form class="registration-form">
-				<div class="registration">
-					<label for="name">Numele dvs:</label>
-					<input id="name" class="person-name" required><br>
-					<label for="age">Varsta dvs:</label>
-					<input type="number" id="age" class="person-age" min="0" required><br>
-				</div>
-				<input type="submit" class="button" value="Inregistreaza-te">
-			</form>
-		</div>
+    <!-- left section -->
+    <div class="residents">
+        <!-- List with all residents -->
+        <div class="residents-list-container">
+            <div class="residents-title">
+                <h1>Locatari</h1>
+            </div>
+            <ol class="resident-list"></ol>
+        </div>
+        <!-- Formular for registration -->
+        <form class="registration-form">
+            <div class="registration">
+                <label for="name">Numele dvs:</label>
+                <input id="name" class="person-name" required><br>
+                <label for="age">Varsta dvs:</label>
+                <input type="number" id="age" class="person-age" min="0" required><br>
+            </div>
+            <input type="submit" class="button" value="Inregistreaza-te">
+        </form>
+    </div>
 
-		<!-- center section -->
-		<div class="apartments">
-			<!-- Create or delete the floor -->
-			<div class="apartments-building">
-				<div class="apartments-buttons">
-					<div class="apartment-create">
-						<div class="create">
-							<button class="create button">Creaza un nou etaj</button>
-						</div>
-					</div>
-					<div class="delete">
-						<div class="apartment-delete">
-							<button class="delete button">Sterge un etaj</button>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<!-- Visual building -->
-			<div class="apartments-visual">
-				<div class="apartment-floor">
-				</div>
-			</div>
-		</div>
+    <!-- center section -->
+    <div class="apartments">
+        <!-- Create or delete the floor -->
+        <div class="apartments-building">
+            <div class="apartments-buttons">
+                <div class="apartment-create">
+                    <div class="create">
+                        <button class="create button">Creaza un nou etaj</button>
+                    </div>
+                </div>
+                <div class="delete">
+                    <div class="apartment-delete">
+                        <button class="delete button">Sterge un etaj</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visual building -->
+        <div class="apartments-visual">
+            <div class="apartment-floor">
+            </div>
+        </div>
+    </div>
 
 
-		<!-- right section -->
-		<div class="movement">
-			<form class="movement-form">
-				<div class="movement-residents">
-					<div class="person">
-						<select title="name" class="person-list">
-							<option>Nume locatar fara apartament</option>
-						</select>
-					</div>
-					<div class="free-apartments">
-						<select title="apartment" class="apartments-list">
-							<option>Apartamente ramase disponibile</option>
-						</select>
-					</div>
-				</div>
-				<div class="move">
-					<input type="submit" class="button" value="Muta in apartament">
-				</div>
-			</form>
-		</div>
-	</main>
+    <!-- right section -->
+    <div class="movement">
+        <form class="movement-form">
+            <div class="movement-residents">
+                <div class="person">
+                    <label for="residents">Nume locatar fara apartament</label><br>
+                    <select id="residents" class="person-list">
+                    </select>
+                </div>
+                <div class="free-apartments">
+                    <label for="apartments">Apartamente ramase disponibile</label><br>
+                    <select id="apartments" class="apartments-list">
+                    </select>
+                </div>
+            </div>
+            <div class="move">
+                <input type="submit" class="button" value="Muta in apartament">
+            </div>
+        </form>
+    </div>
 
-	<script src="./scripts/PersonScripts.js"></script>
-	<script src="./scripts/ApartmentsScripts.js"></script>
-	<script src="./scripts/AdministrationScripts.js"></script>
-	<script src="./scripts/IntegrationScripts.js"></script>
+</main>
+
+<script src="./scripts/PersonScripts.js"></script>
+<script src="./scripts/ApartmentsScripts.js"></script>
+<script src="./scripts/AdministrationScripts.js"></script>
+<script src="./scripts/IntegrationScripts.js"></script>
+<!--<script src="./scripts/mock.js"></script>-->
 </body>
 </html>
 
